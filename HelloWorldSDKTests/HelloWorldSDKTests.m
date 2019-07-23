@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "../HelloWorldSDK/HelloWorld.h"
 
 @interface HelloWorldSDKTests : XCTestCase
 
@@ -22,9 +23,18 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
+- (void)testHelloWorld {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCTAssert([[HelloWorld helloWithName:@"World"] isEqualToString:@"Hello, World"]);
+}
+
+- (void)testHiWorld {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCTAssert([[[[HelloWorld alloc] init] hiWithName:@"World"] isEqualToString:@"Hi, World"]);
 }
 
 - (void)testPerformanceExample {
