@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "HelloWorldSDK/HelloWorldSDK.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _titleLabel.text = [HelloWorld helloWithName:@"小風小馬"];
 }
 
 
