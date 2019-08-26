@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA514F7723142B8A00242BCB /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA514F7623142B8A00242BCB /* HelloWorld.swift */; };
 		BA5F4E47231413D3008FD93A /* HelloWorldSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5F4E45231413D3008FD93A /* HelloWorldSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA514F7623142B8A00242BCB /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		BA5F4E42231413D3008FD93A /* HelloWorldSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloWorldSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5F4E45231413D3008FD93A /* HelloWorldSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldSDK.h; sourceTree = "<group>"; };
 		BA5F4E46231413D3008FD93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				BA5F4E45231413D3008FD93A /* HelloWorldSDK.h */,
 				BA5F4E46231413D3008FD93A /* Info.plist */,
+				BA514F7623142B8A00242BCB /* HelloWorld.swift */,
 			);
 			path = HelloWorldSDK;
 			sourceTree = "<group>";
@@ -90,11 +93,13 @@
 		BA5F4E39231413D3008FD93A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Peteranny;
 				TargetAttributes = {
 					BA5F4E41231413D3008FD93A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA514F7723142B8A00242BCB /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +267,7 @@
 		BA5F4E4B231413D3008FD93A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteranny.HelloWorldSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +293,7 @@
 		BA5F4E4C231413D3008FD93A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
