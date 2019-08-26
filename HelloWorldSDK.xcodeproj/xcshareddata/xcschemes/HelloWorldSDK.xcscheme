@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BA5F4E41231413D3008FD93A"
+            BuildableName = "HelloWorldSDK.framework"
+            BlueprintName = "HelloWorldSDK"
+            ReferencedContainer = "container:HelloWorldSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

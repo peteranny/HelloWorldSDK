@@ -8,17 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		BA514F7723142B8A00242BCB /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA514F7623142B8A00242BCB /* HelloWorld.swift */; };
+		BA514F9D2314474000242BCB /* HelloWorldSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA514F9C2314474000242BCB /* HelloWorldSDKTests.swift */; };
+		BA514F9F2314474000242BCB /* HelloWorldSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5F4E42231413D3008FD93A /* HelloWorldSDK.framework */; };
 		BA5F4E47231413D3008FD93A /* HelloWorldSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5F4E45231413D3008FD93A /* HelloWorldSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA514FA02314474000242BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA5F4E39231413D3008FD93A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA5F4E41231413D3008FD93A;
+			remoteInfo = HelloWorldSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BA514F7623142B8A00242BCB /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		BA514F9A2314473F00242BCB /* HelloWorldSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA514F9C2314474000242BCB /* HelloWorldSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldSDKTests.swift; sourceTree = "<group>"; };
+		BA514F9E2314474000242BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5F4E42231413D3008FD93A /* HelloWorldSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloWorldSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5F4E45231413D3008FD93A /* HelloWorldSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldSDK.h; sourceTree = "<group>"; };
 		BA5F4E46231413D3008FD93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA514F972314473F00242BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA514F9F2314474000242BCB /* HelloWorldSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA5F4E3F231413D3008FD93A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +52,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA514F9B2314474000242BCB /* HelloWorldSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA514F9C2314474000242BCB /* HelloWorldSDKTests.swift */,
+				BA514F9E2314474000242BCB /* Info.plist */,
+			);
+			path = HelloWorldSDKTests;
+			sourceTree = "<group>";
+		};
 		BA5F4E38231413D2008FD93A = {
 			isa = PBXGroup;
 			children = (
 				BA5F4E44231413D3008FD93A /* HelloWorldSDK */,
+				BA514F9B2314474000242BCB /* HelloWorldSDKTests */,
 				BA5F4E43231413D3008FD93A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5F4E42231413D3008FD93A /* HelloWorldSDK.framework */,
+				BA514F9A2314473F00242BCB /* HelloWorldSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +103,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BA514F992314473F00242BCB /* HelloWorldSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA514FA22314474000242BCB /* Build configuration list for PBXNativeTarget "HelloWorldSDKTests" */;
+			buildPhases = (
+				BA514F962314473F00242BCB /* Sources */,
+				BA514F972314473F00242BCB /* Frameworks */,
+				BA514F982314473F00242BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA514FA12314474000242BCB /* PBXTargetDependency */,
+			);
+			name = HelloWorldSDKTests;
+			productName = HelloWorldSDKTests;
+			productReference = BA514F9A2314473F00242BCB /* HelloWorldSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BA5F4E41231413D3008FD93A /* HelloWorldSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA5F4E4A231413D3008FD93A /* Build configuration list for PBXNativeTarget "HelloWorldSDK" */;
@@ -97,6 +149,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Peteranny;
 				TargetAttributes = {
+					BA514F992314473F00242BCB = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					BA5F4E41231413D3008FD93A = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -116,11 +171,19 @@
 			projectRoot = "";
 			targets = (
 				BA5F4E41231413D3008FD93A /* HelloWorldSDK */,
+				BA514F992314473F00242BCB /* HelloWorldSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA514F982314473F00242BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA5F4E40231413D3008FD93A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +194,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA514F962314473F00242BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA514F9D2314474000242BCB /* HelloWorldSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA5F4E3E231413D3008FD93A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,7 +212,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BA514FA12314474000242BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA5F4E41231413D3008FD93A /* HelloWorldSDK */;
+			targetProxy = BA514FA02314474000242BCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BA514FA32314474000242BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloWorldSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peteranny.HelloWorldSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA514FA42314474000242BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloWorldSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peteranny.HelloWorldSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BA5F4E48231413D3008FD93A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,6 +431,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA514FA22314474000242BCB /* Build configuration list for PBXNativeTarget "HelloWorldSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA514FA32314474000242BCB /* Debug */,
+				BA514FA42314474000242BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BA5F4E3C231413D3008FD93A /* Build configuration list for PBXProject "HelloWorldSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
