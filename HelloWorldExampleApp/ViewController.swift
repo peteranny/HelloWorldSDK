@@ -18,6 +18,7 @@ class ViewController: UIViewController {
             let label = UILabel()
             label.frame.origin = CGPoint(x: 100, y: 100)
             label.text = HelloWorld().hello(to: "World")
+            label.textColor = HelloWorld().helloColor
             label.sizeToFit()
             return label
         }()

@@ -17,6 +17,7 @@
 		BA8FFEFC23152BAC00385715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8FFEFA23152BAC00385715 /* Main.storyboard */; };
 		BA8FFEFE23152BAE00385715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8FFEFD23152BAE00385715 /* Assets.xcassets */; };
 		BA8FFF0123152BAE00385715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8FFEFF23152BAE00385715 /* LaunchScreen.storyboard */; };
+		BA8FFF0923152DE700385715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8FFF0823152DE700385715 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		BA8FFEFD23152BAE00385715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA8FFF0023152BAE00385715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA8FFF0223152BAE00385715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8FFF0823152DE700385715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC80F35ADCDD6CF058F097A6 /* Pods_HelloWorldExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		BA5F4E44231413D3008FD93A /* HelloWorldSDK */ = {
 			isa = PBXGroup;
 			children = (
+				BA8FFF0823152DE700385715 /* Assets.xcassets */,
 				BA5F4E45231413D3008FD93A /* HelloWorldSDK.h */,
 				BA5F4E46231413D3008FD93A /* Info.plist */,
 				BA514F7623142B8A00242BCB /* HelloWorld.swift */,
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8FFF0923152DE700385715 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
