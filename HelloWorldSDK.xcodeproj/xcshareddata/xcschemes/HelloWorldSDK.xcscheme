@@ -28,13 +28,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BA514F992314473F00242BCB"
+               BuildableName = "HelloWorldSDKTests.xctest"
+               BlueprintName = "HelloWorldSDKTests"
+               ReferencedContainer = "container:HelloWorldSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA5F4E41231413D3008FD93A"
-            BuildableName = "HelloWorldSDK.framework"
-            BlueprintName = "HelloWorldSDK"
+            BlueprintIdentifier = "BA8FFEF323152BAC00385715"
+            BuildableName = "HelloWorldExampleApp.app"
+            BlueprintName = "HelloWorldExampleApp"
             ReferencedContainer = "container:HelloWorldSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA5F4E41231413D3008FD93A"
-            BuildableName = "HelloWorldSDK.framework"
-            BlueprintName = "HelloWorldSDK"
+            BlueprintIdentifier = "BA8FFEF323152BAC00385715"
+            BuildableName = "HelloWorldExampleApp.app"
+            BlueprintName = "HelloWorldExampleApp"
             ReferencedContainer = "container:HelloWorldSDK.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
