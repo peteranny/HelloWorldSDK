@@ -1,0 +1,6 @@
+framework module HelloWorldSDK {
+  umbrella header "HelloWorldSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

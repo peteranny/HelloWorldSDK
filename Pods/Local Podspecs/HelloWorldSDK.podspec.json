@@ -1,0 +1,19 @@
+{
+  "name": "HelloWorldSDK",
+  "version": "0.0.1",
+  "summary": "iOS SDK for Hello World",
+  "description": "iOS SDK for Hello World, including example app",
+  "homepage": "https://github.com/peteranny/",
+  "license": "MIT",
+  "authors": "peteranny",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "4.2",
+  "source": {
+    "git": "https://github.com/peteranny/HelloWorldSDK.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "HelloWorldSDK/**/*.{h,m,swift}",
+  "public_header_files": "HelloWorldSDK/**/*.h"
+}
